@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Huszka Weightlifting</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Oswald and Work Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#D32F2F',
+                        'legacy-black': '#111111',
+                        'concrete-gray': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        'oswald': ['Oswald', 'sans-serif'],
+                        'work-sans': ['Work Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-legacy-black">
+
+    <!-- Utility Top Bar -->
+    <div class="bg-legacy-black text-white text-center py-2 text-sm md:text-base">
+        <span class="md:hidden">📍 Round Rock, TX | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">Call Us</a></span>
+        <span class="hidden md:inline">📍 111 E Old Settlers Blvd, Round Rock, TX 78664 | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">(512) 577-0122</a></span>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-legacy-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-primary-red rounded flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">H</span>
+                </div>
+                <h1 class="font-oswald text-xl md:text-2xl uppercase tracking-tight">Huszka Weightlifting</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Home</a>
+                <a href="services.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Services</a>
+                <a href="about.html" class="font-oswald text-sm uppercase tracking-wider text-primary-red">About</a>
+                <a href="location.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Location</a>
+                <a href="index.html#contact" class="bg-primary-red hover:bg-red-700 text-white px-6 py-3 font-oswald text-sm uppercase tracking-wider transition-all">Get Started</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white text-3xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="bg-concrete-gray py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="border-l-8 border-primary-red pl-8">
+                <h1 class="font-oswald text-5xl md:text-7xl lg:text-8xl uppercase leading-none mb-6">
+                    About Us
+                </h1>
+                <p class="max-w-2xl text-lg md:text-xl text-gray-700 font-work-sans leading-relaxed">
+                    Meet the coaches carrying on the Huszka legacy of Olympic weightlifting excellence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet The Coaches -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase">Meet Our Coaches</h2>
+                <div class="w-24 h-1 bg-primary-red mx-auto mt-4"></div>
+            </div>
+
+            <!-- Coach Attila -->
+            <div class="mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <div class="absolute -inset-4 border-2 border-primary-red"></div>
+                        <img src="Photos/Attila2.jpg" alt="Coach Attila Huszka" class="relative z-10 w-full grayscale hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <div>
+                        <h3 class="font-oswald text-3xl md:text-4xl uppercase mb-2">Attila Huszka</h3>
+                        <p class="text-primary-red font-oswald text-lg uppercase mb-6">Head Coach / USA Weightlifting Level 2</p>
+
+                        <div class="space-y-4 text-gray-700 font-work-sans text-base leading-relaxed">
+                            <p>Attila Huszka grew up in competitive weightlifting, knows and loves the sport: his first competition meet was at age 12, won the National Junior Olympic championships at age 19, held Masters State and National weightlifting records for his age and weight division and placed <strong>1st at the 2019 IWF World Masters Weightlifting Competition</strong>.</p>
+
+                            <p>He has been instrumental in teaching weightlifting to hundreds of individuals for track and field, football, wrestling, competitive weightlifting and general strength training. Coach Attila trains true beginners that have never touched a barbell to high level competitive athletes.</p>
+
+                            <p>Attila is a <strong>second generation passionate lifter and coach</strong>. His father and mentor Mihaly (Michael) Huszka competed in 2 Olympics, 3 world championships, awarded Grandmaster of the Century and was a US Olympic Weightlifting Coach.</p>
+                        </div>
+
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <span class="bg-concrete-gray px-4 py-2 text-sm font-bold uppercase">🏆 World Champion</span>
+                            <span class="bg-concrete-gray px-4 py-2 text-sm font-bold uppercase">📚 USAW Level 2</span>
+                            <span class="bg-concrete-gray px-4 py-2 text-sm font-bold uppercase">🥇 National Records</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coach Mirrya -->
+            <div class="mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h3 class="font-oswald text-3xl md:text-4xl uppercase mb-2">Mirrya Huszka, PhD</h3>
+                        <p class="text-primary-red font-oswald text-lg uppercase mb-6">Coach / USA Weightlifting Level 2</p>
+
+                        <div class="space-y-4 text-gray-700 font-work-sans text-base leading-relaxed">
+                            <p>Mirrya grew up playing a variety of sports (volleyball, basketball, and track) and showing horses competitively. She started weightlifting after meeting her husband Attila and has competed locally and at state level.</p>
+
+                            <p>She is a <strong>certified USA Weightlifting (USAW) Level 2 coach</strong>. She loves working with beginners and youth, especially seeing the moment when the mind and body 'click' and success is achieved.</p>
+
+                            <blockquote class="border-l-4 border-primary-red pl-6 py-4 italic">
+                                "I am most proud when a kid is able to hit their lifts on the platform. To witness their confidence and individual drive on display, knowing it translates to all facets of their lives."
+                            </blockquote>
+                        </div>
+
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <span class="bg-concrete-gray px-4 py-2 text-sm font-bold uppercase">👩‍🎓 PhD</span>
+                            <span class="bg-concrete-gray px-4 py-2 text-sm font-bold uppercase">📚 USAW Level 2</span>
+                            <span class="bg-concrete-gray px-4 py-2 text-sm font-bold uppercase">👶 Youth Specialist</span>
+                        </div>
+                    </div>
+                    <div class="relative order-1 lg:order-2">
+                        <div class="absolute -inset-4 border-2 border-primary-red"></div>
+                        <img src="Photos/MIRRYA03SMALL.jpg" alt="Coach Mirrya Huszka" class="relative z-10 w-full grayscale hover:grayscale-0 transition-all duration-500">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coach Renee -->
+            <div class="mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <div class="absolute -inset-4 border-2 border-primary-red"></div>
+                        <img src="Photos/renee1.jpg" alt="Coach Renee Davila" class="relative z-10 w-full grayscale hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <div>
+                        <h3 class="font-oswald text-3xl md:text-4xl uppercase mb-2">Renee Davila</h3>
+                        <p class="text-primary-red font-oswald text-lg uppercase mb-6">Assistant Coach / USA Weightlifting Level 1</p>
+
+                        <div class="space-y-4 text-gray-700 font-work-sans text-base leading-relaxed">
+                            <p>Renee believes that <strong>strength builds confidence</strong> — both on and off the platform. She brings a positive, encouraging energy to every session and loves helping athletes discover what they're capable of through the sport of Olympic weightlifting.</p>
+
+                            <p>Coaching under the guidance of Coach Attila Huszka, Renee continues to grow her technical knowledge and coaching experience while supporting athletes of all levels at Huszka Weightlifting Club.</p>
+                        </div>
+
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <span class="bg-concrete-gray px-4 py-2 text-sm font-bold uppercase">📚 USAW Level 1</span>
+                            <span class="bg-concrete-gray px-4 py-2 text-sm font-bold uppercase">💪 All Levels</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="py-24 px-6 bg-concrete-gray">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-4">Our Vision & Mission</h2>
+                <div class="w-24 h-1 bg-primary-red mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Mission -->
+                <div class="bg-white p-8 md:p-10 border-l-4 border-primary-red">
+                    <h3 class="font-oswald text-2xl uppercase mb-6">Our Mission</h3>
+                    <p class="text-gray-700 font-work-sans leading-relaxed mb-6">
+                        Our mission is to provide weightlifting development in a positive learning environment to each athlete in order for them to experience both physical and mental gains that they can continue exercising throughout their lifetime.
+                    </p>
+                    <p class="text-gray-700 font-work-sans leading-relaxed">
+                        We understand that athletes are individuals and have their own unique milestones and goals that we support.
+                    </p>
+                </div>
+
+                <!-- What We Do -->
+                <div class="bg-white p-8 md:p-10 border-l-4 border-primary-red">
+                    <h3 class="font-oswald text-2xl uppercase mb-6">What We Teach</h3>
+                    <p class="text-gray-700 font-work-sans leading-relaxed mb-6">
+                        Huszka Weightlifting Club teaches a higher level of weightlifting technique, programs for athletic strength, and makes sure athletes have fun while challenging themselves!
+                    </p>
+                    <p class="text-gray-700 font-work-sans leading-relaxed">
+                        Athletes learn the highly athletic style of Olympic Weightlifting with the inclusion of several types of accompanying weight training and accessory work.
+                    </p>
+                </div>
+            </div>
+
+            <!-- What Athletes Gain -->
+            <div class="mt-12 bg-legacy-black text-white p-8 md:p-10">
+                <h3 class="font-oswald text-2xl uppercase mb-6">What Athletes Gain</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="text-4xl mb-4">💪</div>
+                        <h4 class="font-oswald text-xl uppercase mb-2">Physical Fitness</h4>
+                        <p class="text-gray-300 font-work-sans">Develop strength, power, flexibility, and overall athleticism.</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-4">🏆</div>
+                        <h4 class="font-oswald text-xl uppercase mb-2">Competition Ready</h4>
+                        <p class="text-gray-300 font-work-sans">Athletes are encouraged to compete at local, state, and national meets when properly prepared.</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-4">🚀</div>
+                        <h4 class="font-oswald text-xl uppercase mb-2">Athletic Performance</h4>
+                        <p class="text-gray-300 font-work-sans">Olympic weightlifting significantly improves performance on the field.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safe Sport -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-4">Safe Sport Commitment</h2>
+                <div class="w-24 h-1 bg-primary-red mx-auto"></div>
+            </div>
+
+            <div class="bg-concrete-gray p-8 md:p-12 border-t-4 border-primary-red">
+                <p class="text-gray-700 font-work-sans text-lg leading-relaxed mb-6">
+                    Huszka Weightlifting Club and USA Weightlifting are committed to providing a <strong>healthy and positive environment free from abuse</strong> for all its members.
+                </p>
+
+                <p class="text-gray-700 font-work-sans leading-relaxed mb-6">
+                    The Safe Sport program, a comprehensive abuse prevention program, consists of a multi-layered approach to keep kids safe, including:
+                </p>
+
+                <ul class="list-disc ml-6 space-y-3 text-gray-700 font-work-sans leading-relaxed mb-6">
+                    <li>Required policies and best practice guidelines</li>
+                    <li>Mandatory screening, including criminal background checks and employment screening</li>
+                    <li>Training and education</li>
+                    <li>Monitoring, supervision and mandatory reporting</li>
+                </ul>
+
+                <p class="text-gray-700 font-work-sans leading-relaxed mb-6">
+                    These measures are informed by experts in the field of child safety and are among the strongest safeguards found in youth-serving organizations.
+                </p>
+
+                <div class="bg-white p-6 border-l-4 border-primary-red">
+                    <p class="text-gray-700 font-work-sans">
+                        For more information, visit <a href="https://www.teamusa.org/usa-weightlifting/safesport" target="_blank" class="text-primary-red font-bold hover:underline">USA Weightlifting's Safe Sport page</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-primary-red">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-oswald text-4xl md:text-6xl uppercase text-white mb-6">
+                Train With Us
+            </h2>
+            <p class="text-white/90 text-lg md:text-xl mb-10 font-work-sans">
+                Experience the Huszka difference. Schedule your free consultation today.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-white hover:bg-gray-100 text-primary-red font-oswald uppercase px-10 py-4 text-lg transition-all">
+                Get Started
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-legacy-black text-gray-400 py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+
+            <!-- Brand Column -->
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 text-white mb-6">
+                    <div class="w-10 h-10 bg-primary-red rounded flex items-center justify-center">
+                        <span class="text-white text-2xl font-bold">H</span>
+                    </div>
+                    <h2 class="font-oswald text-xl uppercase tracking-tight">Huszka Weightlifting</h2>
+                </div>
+                <p class="text-sm leading-relaxed mb-8">
+                    The premier destination for Olympic Weightlifting in Central Texas. Dedicated to the craft of strength since 1968.
+                </p>
+            </div>
+
+            <!-- Navigation Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Navigation</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="index.html" class="hover:text-primary-red transition-colors">Home</a></li>
+                    <li><a href="services.html" class="hover:text-primary-red transition-colors">Programs</a></li>
+                    <li><a href="about.html" class="hover:text-primary-red transition-colors">About</a></li>
+                    <li><a href="location.html" class="hover:text-primary-red transition-colors">Location</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Support</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-primary-red transition-colors">FAQs</a></li>
+                    <li><a href="index.html#contact" class="hover:text-primary-red transition-colors">Contact</a></li>
+                    <li><a href="#" class="hover:text-primary-red transition-colors">Schedule</a></li>
+                    <li><a href="#" class="hover:text-primary-red transition-colors">Pricing</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Contact</h5>
+                <ul class="space-y-4 text-sm">
+                    <li>111 E Old Settlers Blvd<br>Round Rock, TX 78664</li>
+                    <li><a href="tel:512-577-0122" class="hover:text-primary-red transition-colors">(512) 577-0122</a></li>
+                    <li><a href="mailto:info@huszkaweightlifting.com" class="hover:text-primary-red transition-colors">info@huszkaweightlifting.com</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-sm">
+            <p>&copy; 2024 Huszka Weightlifting. All rights reserved. Built on the legacy of Mihaly Huszka.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masters Weightlifting | Huszka Weightlifting</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Oswald and Work Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#D32F2F',
+                        'legacy-black': '#111111',
+                        'concrete-gray': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        'oswald': ['Oswald', 'sans-serif'],
+                        'work-sans': ['Work Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-legacy-black">
+
+    <!-- Utility Top Bar -->
+    <div class="bg-legacy-black text-white text-center py-2 text-sm md:text-base">
+        <span class="md:hidden">📍 Round Rock, TX | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">Call Us</a></span>
+        <span class="hidden md:inline">📍 111 E Old Settlers Blvd, Round Rock, TX 78664 | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">(512) 577-0122</a></span>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-legacy-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-primary-red rounded flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">H</span>
+                </div>
+                <h1 class="font-oswald text-xl md:text-2xl uppercase tracking-tight">Huszka Weightlifting</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="../../index.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Home</a>
+                <a href="../../services.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Services</a>
+                <a href="../../about.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">About</a>
+                <a href="../../location.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Location</a>
+                <a href="#contact" class="bg-primary-red hover:bg-red-700 text-white px-6 py-3 font-oswald text-sm uppercase tracking-wider transition-all">Get Started</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white text-3xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[70vh] min-h-[500px] flex items-end overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 z-10"></div>
+            <img src="../../Photos/1067387.jpg" alt="Masters athlete at national championship" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-20 w-full px-6 pb-16">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="h-px w-12 bg-primary-red"></span>
+                    <span class="text-primary-red font-oswald tracking-[0.3em] uppercase text-xs">Longevity & Performance</span>
+                </div>
+                <h1 class="font-oswald text-5xl md:text-7xl lg:text-8xl uppercase leading-[0.9] text-white mb-6">
+                    Masters<br>Weightlifting
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl font-work-sans leading-relaxed">
+                    Longevity, mobility, and high-performance coaching for the lifelong athlete. Age is just a number on the platform.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="bg-legacy-black border-y border-gray-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-800">
+            <div class="p-8 text-center">
+                <div class="text-3xl md:text-4xl font-oswald text-primary-red mb-2">35+</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500 font-oswald">Age Range</div>
+            </div>
+            <div class="p-8 text-center">
+                <div class="text-3xl md:text-4xl font-oswald text-primary-red mb-2">92%</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500 font-oswald">Mobility Gains</div>
+            </div>
+            <div class="p-8 text-center">
+                <div class="text-3xl md:text-4xl font-oswald text-primary-red mb-2">200+</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500 font-oswald">Masters Coached</div>
+            </div>
+            <div class="p-8 text-center">
+                <div class="text-3xl md:text-4xl font-oswald text-primary-red mb-2">Zero</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500 font-oswald">Age Limits</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Pillars -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-4">The Masters Advantage</h2>
+                <p class="text-gray-700 text-lg max-w-3xl font-work-sans leading-relaxed">
+                    Our Masters program balances competitive goals with long-term health, mobility, and sustainable strength development.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="bg-concrete-gray p-10 border-l-4 border-primary-red">
+                    <div class="text-5xl mb-6">🧘</div>
+                    <h3 class="font-oswald text-2xl uppercase mb-4">Mobility First</h3>
+                    <p class="text-gray-700 font-work-sans leading-relaxed">
+                        Targeted mobility work to maintain and improve range of motion for deep squats, overhead positions, and pain-free movement.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-concrete-gray p-10 border-l-4 border-primary-red">
+                    <div class="text-5xl mb-6">🏋️</div>
+                    <h3 class="font-oswald text-2xl uppercase mb-4">Smart Loading</h3>
+                    <p class="text-gray-700 font-work-sans leading-relaxed">
+                        Intelligent programming that respects recovery needs while building strength and technical proficiency.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-concrete-gray p-10 border-l-4 border-primary-red">
+                    <div class="text-5xl mb-6">🏆</div>
+                    <h3 class="font-oswald text-2xl uppercase mb-4">Competition Ready</h3>
+                    <p class="text-gray-700 font-work-sans leading-relaxed">
+                        Preparing athletes for Masters competitions at local, national, and world championship levels.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-24 bg-concrete-gray px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+                <!-- Image -->
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary-red/10 rounded-full blur-3xl"></div>
+                    <img src="../../Photos/1064533.jpg" alt="Masters athlete celebrating championship victory" class="relative z-10 shadow-2xl grayscale hover:grayscale-0 transition-all duration-500 w-full">
+                </div>
+
+                <!-- Benefits List -->
+                <div>
+                    <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-10">Why Masters Lifting?</h2>
+
+                    <div class="space-y-8">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-6 h-6 rounded-full border-2 border-primary-red flex items-center justify-center shrink-0 mt-1">
+                                <span class="text-primary-red text-xl font-bold">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-oswald text-xl uppercase mb-2">Functional Longevity</h4>
+                                <p class="text-gray-700 font-work-sans">Stay strong, mobile, and independent for decades to come. Lifting heavy things never gets old.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="w-6 h-6 rounded-full border-2 border-primary-red flex items-center justify-center shrink-0 mt-1">
+                                <span class="text-primary-red text-xl font-bold">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-oswald text-xl uppercase mb-2">Age-Group Competition</h4>
+                                <p class="text-gray-700 font-work-sans">Masters weightlifting has age divisions every 5 years. You compete against your peers, not 20-year-olds.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="w-6 h-6 rounded-full border-2 border-primary-red flex items-center justify-center shrink-0 mt-1">
+                                <span class="text-primary-red text-xl font-bold">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-oswald text-xl uppercase mb-2">Injury Prevention</h4>
+                                <p class="text-gray-700 font-work-sans">Building resilient joints, tendons, and connective tissue through progressive loading and proper technique.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="w-6 h-6 rounded-full border-2 border-primary-red flex items-center justify-center shrink-0 mt-1">
+                                <span class="text-primary-red text-xl font-bold">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-oswald text-xl uppercase mb-2">Community & Camaraderie</h4>
+                                <p class="text-gray-700 font-work-sans">Train alongside lifelong athletes who share your commitment to strength and excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The Process -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-4">Your Masters Journey</h2>
+                <p class="text-gray-700 text-lg font-work-sans">Starting strong at any age.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="relative bg-concrete-gray p-8 border-t-4 border-primary-red">
+                    <div class="text-6xl font-oswald text-gray-200 absolute top-4 right-6">01</div>
+                    <div class="text-4xl mb-6">📊</div>
+                    <h3 class="font-oswald text-xl uppercase mb-3 relative z-10">Assessment</h3>
+                    <p class="text-gray-700 text-sm font-work-sans">Movement screening to identify mobility restrictions and training history.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative bg-concrete-gray p-8 border-t-4 border-primary-red">
+                    <div class="text-6xl font-oswald text-gray-200 absolute top-4 right-6">02</div>
+                    <div class="text-4xl mb-6">🎯</div>
+                    <h3 class="font-oswald text-xl uppercase mb-3 relative z-10">Technique</h3>
+                    <p class="text-gray-700 text-sm font-work-sans">Building or refining Olympic lift technique with age-appropriate progressions.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative bg-concrete-gray p-8 border-t-4 border-primary-red">
+                    <div class="text-6xl font-oswald text-gray-200 absolute top-4 right-6">03</div>
+                    <div class="text-4xl mb-6">💪</div>
+                    <h3 class="font-oswald text-xl uppercase mb-3 relative z-10">Strength Building</h3>
+                    <p class="text-gray-700 text-sm font-work-sans">Progressive strength cycles that build work capacity and resilience.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative bg-concrete-gray p-8 border-t-4 border-primary-red">
+                    <div class="text-6xl font-oswald text-gray-200 absolute top-4 right-6">04</div>
+                    <div class="text-4xl mb-6">🏆</div>
+                    <h3 class="font-oswald text-xl uppercase mb-3 relative z-10">Competition Prep</h3>
+                    <p class="text-gray-700 text-sm font-work-sans">Peaking protocols for Masters competitions and platform performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-32 px-6 bg-primary-red relative overflow-hidden" id="contact">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <h2 class="font-oswald text-5xl md:text-7xl uppercase text-white mb-8 leading-tight">
+                Never Too Late<br>To Start Strong
+            </h2>
+            <p class="text-xl text-white/90 mb-12 max-w-2xl mx-auto font-work-sans leading-relaxed">
+                Join our Masters program and discover what your body is still capable of. Free trial session—no experience necessary.
+            </p>
+
+            <!-- CTA Form (Inline on Desktop, Stacked on Mobile) -->
+            <form class="bg-white/10 backdrop-blur p-8 mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <input type="text" placeholder="Full Name" class="w-full bg-white/90 border-none p-4 min-h-[48px] font-work-sans text-legacy-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white">
+                    <input type="tel" placeholder="Phone Number" class="w-full bg-white/90 border-none p-4 min-h-[48px] font-work-sans text-legacy-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white">
+                    <input type="email" placeholder="Email Address" class="w-full bg-white/90 border-none p-4 min-h-[48px] font-work-sans text-legacy-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white">
+                </div>
+                <button class="w-full bg-white hover:bg-gray-100 text-primary-red px-12 py-5 font-oswald text-lg uppercase transition-all">
+                    Schedule Free Trial Session
+                </button>
+            </form>
+
+            <p class="text-white/70 text-sm font-work-sans">Or call us at <a href="tel:512-577-0122" class="underline hover:text-white">(512) 577-0122</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-legacy-black text-gray-400 py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+
+            <!-- Brand Column -->
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 text-white mb-6">
+                    <div class="w-10 h-10 bg-primary-red rounded flex items-center justify-center">
+                        <span class="text-white text-2xl font-bold">H</span>
+                    </div>
+                    <h2 class="font-oswald text-xl uppercase tracking-tight">Huszka Weightlifting</h2>
+                </div>
+                <p class="text-sm leading-relaxed mb-8">
+                    The premier destination for Olympic Weightlifting in Central Texas. Dedicated to the craft of strength since 1968.
+                </p>
+            </div>
+
+            <!-- Navigation Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Navigation</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="../../index.html" class="hover:text-primary-red transition-colors">Home</a></li>
+                    <li><a href="../../services.html" class="hover:text-primary-red transition-colors">Programs</a></li>
+                    <li><a href="../../about.html" class="hover:text-primary-red transition-colors">The Legacy</a></li>
+                    <li><a href="../../location.html" class="hover:text-primary-red transition-colors">Location</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Support</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-primary-red transition-colors">FAQs</a></li>
+                    <li><a href="#contact" class="hover:text-primary-red transition-colors">Contact</a></li>
+                    <li><a href="#" class="hover:text-primary-red transition-colors">Schedule</a></li>
+                    <li><a href="#" class="hover:text-primary-red transition-colors">Pricing</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Contact</h5>
+                <ul class="space-y-4 text-sm">
+                    <li>111 E Old Settlers Blvd<br>Round Rock, TX 78664</li>
+                    <li><a href="tel:512-577-0122" class="hover:text-primary-red transition-colors">(512) 577-0122</a></li>
+                    <li><a href="mailto:info@huszkaweightlifting.com" class="hover:text-primary-red transition-colors">info@huszkaweightlifting.com</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-sm">
+            <p>&copy; 2024 Huszka Weightlifting. All rights reserved. Built on the legacy of Mihaly Huszka.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location & Directions | Huszka Weightlifting</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Oswald and Work Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#D32F2F',
+                        'legacy-black': '#111111',
+                        'concrete-gray': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        'oswald': ['Oswald', 'sans-serif'],
+                        'work-sans': ['Work Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-legacy-black">
+
+    <!-- Utility Top Bar -->
+    <div class="bg-legacy-black text-white text-center py-2 text-sm md:text-base">
+        <span class="md:hidden">📍 Round Rock, TX | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">Call Us</a></span>
+        <span class="hidden md:inline">📍 111 E Old Settlers Blvd, Round Rock, TX 78664 | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">(512) 577-0122</a></span>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-legacy-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-primary-red rounded flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">H</span>
+                </div>
+                <h1 class="font-oswald text-xl md:text-2xl uppercase tracking-tight">Huszka Weightlifting</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Home</a>
+                <a href="services.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Services</a>
+                <a href="about.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">About</a>
+                <a href="location.html" class="font-oswald text-sm uppercase tracking-wider text-primary-red">Location</a>
+                <a href="index.html#contact" class="bg-primary-red hover:bg-red-700 text-white px-6 py-3 font-oswald text-sm uppercase tracking-wider transition-all">Get Started</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white text-3xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="bg-concrete-gray py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="border-l-8 border-primary-red pl-8">
+                <h1 class="font-oswald text-5xl md:text-7xl lg:text-8xl uppercase leading-none mb-6">
+                    Visit Our Gym
+                </h1>
+                <p class="max-w-2xl text-lg md:text-xl text-gray-700 font-work-sans leading-relaxed">
+                    Located in Round Rock, Texas. Follow the directions below to find us easily.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Info & Map -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="font-oswald text-4xl uppercase mb-8">Contact Information</h2>
+
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start gap-4">
+                            <span class="text-primary-red text-3xl">📍</span>
+                            <div>
+                                <p class="font-bold text-xl mb-2">Address</p>
+                                <p class="text-gray-700 text-lg">111 E Old Settlers Blvd<br>Round Rock, TX 78664</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <span class="text-primary-red text-3xl">📞</span>
+                            <div>
+                                <p class="font-bold text-xl mb-2">Phone</p>
+                                <a href="tel:512-577-0122" class="text-gray-700 text-lg hover:text-primary-red transition-colors">(512) 577-0122</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <span class="text-primary-red text-3xl">🕒</span>
+                            <div>
+                                <p class="font-bold text-xl mb-2">Hours</p>
+                                <p class="text-gray-700 text-lg">
+                                    Monday - Thursday: 5pm - 8pm<br>
+                                    Saturday: By Appointment Only<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/fJbJZzH1mKC9Lc7p7" target="_blank" class="inline-block bg-primary-red hover:bg-red-700 text-white font-oswald uppercase px-10 py-4 text-lg transition-all">
+                        Get Directions
+                    </a>
+                </div>
+
+                <!-- Map Embed -->
+                <div class="relative h-[400px] lg:h-full min-h-[400px] rounded overflow-hidden shadow-lg">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.5606975877504!2d-97.68751632379715!3d30.53345887468096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d17f92ec754f%3A0x19add08fec416b78!2sHuszka%20Weightlifting%20Club!5e0!3m2!1sen!2sus!4v1768250317391!5m2!1sen!2sus"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Parking Instructions -->
+    <section class="py-20 px-6 bg-concrete-gray">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-8 text-center">Parking & Finding Us</h2>
+
+            <div class="bg-white p-8 md:p-12 rounded shadow-lg border-l-8 border-primary-red">
+                <div class="space-y-6 text-gray-700 font-work-sans text-lg leading-relaxed">
+                    <div class="flex items-start gap-4">
+                        <span class="text-primary-red text-4xl font-bold shrink-0">1</span>
+                        <div>
+                            <h3 class="font-oswald text-2xl uppercase mb-2">Park at Rock Chiropractic</h3>
+                            <p>When you arrive, park in the <strong>Rock Chiropractic parking lot</strong>. This is your main landmark.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <span class="text-primary-red text-4xl font-bold shrink-0">2</span>
+                        <div>
+                            <h3 class="font-oswald text-2xl uppercase mb-2">Look for the Warehouse</h3>
+                            <p>Huszka Weightlifting is located in the <strong>warehouse building behind Rock Chiropractic</strong>. Walk through the parking lot to reach the gym entrance.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-6">
+                        <div class="flex items-start gap-3">
+                            <span class="text-yellow-600 text-2xl">⚠️</span>
+                            <div>
+                                <h4 class="font-bold text-yellow-800 mb-2">Important Navigation Note</h4>
+                                <p class="text-yellow-800"><strong>Google Maps may direct you to a parking lot next to the gym.</strong></p>
+                                <p class="text-yellow-800 mt-2">If this happens:</p>
+                                <ul class="list-disc ml-5 mt-2 text-yellow-800">
+                                    <li>Exit that parking lot</li>
+                                    <li>Turn <strong>right</strong> onto the main road</li>
+                                    <li>Then turn into the entrance for <strong>Rock Chiropractic</strong></li>
+                                    <li>Park there and walk to the warehouse behind</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-gray-200">
+                        <p class="text-gray-600 italic">Having trouble finding us? Give us a call at <a href="tel:512-577-0122" class="text-primary-red font-bold hover:underline">(512) 577-0122</a> and we'll guide you in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-primary-red">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-oswald text-4xl md:text-6xl uppercase text-white mb-6">
+                Ready To Visit?
+            </h2>
+            <p class="text-white/90 text-lg md:text-xl mb-10 font-work-sans">
+                Stop by during our open hours or schedule a free consultation to tour the facility and meet our coaches.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-white hover:bg-gray-100 text-primary-red font-oswald uppercase px-10 py-4 text-lg transition-all">
+                Schedule Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-legacy-black text-gray-400 py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+
+            <!-- Brand Column -->
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 text-white mb-6">
+                    <div class="w-10 h-10 bg-primary-red rounded flex items-center justify-center">
+                        <span class="text-white text-2xl font-bold">H</span>
+                    </div>
+                    <h2 class="font-oswald text-xl uppercase tracking-tight">Huszka Weightlifting</h2>
+                </div>
+                <p class="text-sm leading-relaxed mb-8">
+                    The premier destination for Olympic Weightlifting in Central Texas. Dedicated to the craft of strength since 1968.
+                </p>
+            </div>
+
+            <!-- Navigation Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Navigation</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="index.html" class="hover:text-primary-red transition-colors">Home</a></li>
+                    <li><a href="services.html" class="hover:text-primary-red transition-colors">Programs</a></li>
+                    <li><a href="index.html#legacy" class="hover:text-primary-red transition-colors">The Legacy</a></li>
+                    <li><a href="location.html" class="hover:text-primary-red transition-colors">Location</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Support</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-primary-red transition-colors">FAQs</a></li>
+                    <li><a href="index.html#contact" class="hover:text-primary-red transition-colors">Contact</a></li>
+                    <li><a href="#" class="hover:text-primary-red transition-colors">Schedule</a></li>
+                    <li><a href="#" class="hover:text-primary-red transition-colors">Pricing</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Contact</h5>
+                <ul class="space-y-4 text-sm">
+                    <li>111 E Old Settlers Blvd<br>Round Rock, TX 78664</li>
+                    <li><a href="tel:512-577-0122" class="hover:text-primary-red transition-colors">(512) 577-0122</a></li>
+                    <li><a href="mailto:info@huszkaweightlifting.com" class="hover:text-primary-red transition-colors">info@huszkaweightlifting.com</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-sm">
+            <p>&copy; 2024 Huszka Weightlifting. All rights reserved. Built on the legacy of Mihaly Huszka.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

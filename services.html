@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Huszka Weightlifting</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Oswald and Work Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#D32F2F',
+                        'legacy-black': '#111111',
+                        'concrete-gray': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        'oswald': ['Oswald', 'sans-serif'],
+                        'work-sans': ['Work Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-legacy-black">
+
+    <!-- Utility Top Bar -->
+    <div class="bg-legacy-black text-white text-center py-2 text-sm md:text-base">
+        <span class="md:hidden">📍 Round Rock, TX | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">Call Us</a></span>
+        <span class="hidden md:inline">📍 111 E Old Settlers Blvd, Round Rock, TX 78664 | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">(512) 577-0122</a></span>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-legacy-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-primary-red rounded flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">H</span>
+                </div>
+                <h1 class="font-oswald text-xl md:text-2xl uppercase tracking-tight">Huszka Weightlifting</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Home</a>
+                <a href="services.html" class="font-oswald text-sm uppercase tracking-wider text-primary-red">Services</a>
+                <a href="about.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">About</a>
+                <a href="location.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Location</a>
+                <a href="index.html#contact" class="bg-primary-red hover:bg-red-700 text-white px-6 py-3 font-oswald text-sm uppercase tracking-wider transition-all">Get Started</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white text-3xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="bg-concrete-gray py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="border-l-8 border-primary-red pl-8">
+                <h1 class="font-oswald text-5xl md:text-7xl lg:text-8xl uppercase leading-none mb-6">
+                    Coaching Services
+                </h1>
+                <p class="max-w-2xl text-lg md:text-xl text-gray-700 font-work-sans leading-relaxed">
+                    Professional, athletic, and disciplined coaching inspired by Olympian Mihaly Huszka. Elite-level programming designed for the pursuit of strength and technical mastery.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Youth Weightlifting Card -->
+                <a href="services/youth-weightlifting/" class="group relative aspect-video overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10"></div>
+                    <img src="Photos/GABBY.jpg" alt="Young athlete performing clean and jerk" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+
+                    <div class="absolute inset-0 z-20 p-8 flex flex-col justify-end">
+                        <h3 class="font-oswald text-3xl md:text-4xl text-white uppercase mb-3">Youth Weightlifting</h3>
+                        <p class="text-gray-200 text-sm md:text-base mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Foundational technique and the Olympic pathway for the next generation of champions.
+                        </p>
+                        <span class="text-primary-red font-oswald text-sm uppercase tracking-wider">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Youth Strength & Conditioning Card -->
+                <a href="services/youth-strength-conditioning/" class="group relative aspect-video overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10"></div>
+                    <img src="Photos/Attila_Coach4.jpg" alt="Athletes in strength and conditioning training" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+
+                    <div class="absolute inset-0 z-20 p-8 flex flex-col justify-end">
+                        <h3 class="font-oswald text-3xl md:text-4xl text-white uppercase mb-3">Youth Strength & Conditioning</h3>
+                        <p class="text-gray-200 text-sm md:text-base mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Performance-based physical preparation for multi-sport athletes.
+                        </p>
+                        <span class="text-primary-red font-oswald text-sm uppercase tracking-wider">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Masters Weightlifting Card -->
+                <a href="services/masters-weightlifting/" class="group relative aspect-video overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10"></div>
+                    <img src="Photos/1067387.jpg" alt="Experienced lifter preparing for competition" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+
+                    <div class="absolute inset-0 z-20 p-8 flex flex-col justify-end">
+                        <h3 class="font-oswald text-3xl md:text-4xl text-white uppercase mb-3">Masters Weightlifting</h3>
+                        <p class="text-gray-200 text-sm md:text-base mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Longevity, mobility, and high-performance coaching for the lifelong athlete.
+                        </p>
+                        <span class="text-primary-red font-oswald text-sm uppercase tracking-wider">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Olympic Coaching Card -->
+                <a href="services/olympic-weightlifting-coaching/" class="group relative aspect-video overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10"></div>
+                    <img src="Photos/2014 l.jpg" alt="Close up of Olympic weightlifting technique" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+
+                    <div class="absolute inset-0 z-20 p-8 flex flex-col justify-end">
+                        <h3 class="font-oswald text-3xl md:text-4xl text-white uppercase mb-3">Olympic Weightlifting Coaching</h3>
+                        <p class="text-gray-200 text-sm md:text-base mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Advanced programming rooted in Mihaly Huszka's legacy of excellence.
+                        </p>
+                        <span class="text-primary-red font-oswald text-sm uppercase tracking-wider">Learn More →</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy Callout Section -->
+    <section class="bg-legacy-black text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="border-l-8 border-primary-red pl-8">
+                <h2 class="font-oswald text-2xl md:text-3xl uppercase mb-6">The Huszka Legacy</h2>
+                <p class="text-base md:text-lg text-gray-400 font-work-sans leading-relaxed mb-6 max-w-4xl">
+                    Our programs are built on the foundations set by Olympian Mihaly Huszka, focusing on precision, strength, and the spirit of competition. We provide elite-level programming for athletes at every stage of their journey. Every lift is a tribute to a lifetime of discipline.
+                </p>
+                <div class="flex flex-wrap gap-8 items-center text-gray-500">
+                    <span class="font-oswald tracking-widest text-xs uppercase">Est. 1968</span>
+                    <span class="font-oswald tracking-widest text-xs uppercase">Olympian Pedigree</span>
+                    <span class="font-oswald tracking-widest text-xs uppercase">Championship Mindset</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-primary-red">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-oswald text-4xl md:text-6xl uppercase text-white mb-6">
+                Ready To Start Your Journey?
+            </h2>
+            <p class="text-white/90 text-lg md:text-xl mb-10 font-work-sans">
+                Claim your free assessment and discover which program is right for you.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-white hover:bg-gray-100 text-primary-red font-oswald uppercase px-10 py-4 text-lg transition-all">
+                Claim Free Assessment
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-legacy-black text-gray-400 py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+
+            <!-- Brand Column -->
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 text-white mb-6">
+                    <div class="w-10 h-10 bg-primary-red rounded flex items-center justify-center">
+                        <span class="text-white text-2xl font-bold">H</span>
+                    </div>
+                    <h2 class="font-oswald text-xl uppercase tracking-tight">Huszka Weightlifting</h2>
+                </div>
+                <p class="text-sm leading-relaxed mb-8">
+                    The premier destination for Olympic Weightlifting in Central Texas. Dedicated to the craft of strength since 1968.
+                </p>
+            </div>
+
+            <!-- Navigation Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Navigation</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="index.html" class="hover:text-primary-red transition-colors">Home</a></li>
+                    <li><a href="services.html" class="hover:text-primary-red transition-colors">Programs</a></li>
+                    <li><a href="about.html" class="hover:text-primary-red transition-colors">About</a></li>
+                    <li><a href="location.html" class="hover:text-primary-red transition-colors">Location</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Support</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-primary-red transition-colors">FAQs</a></li>
+                    <li><a href="index.html#contact" class="hover:text-primary-red transition-colors">Contact</a></li>
+                    <li><a href="#" class="hover:text-primary-red transition-colors">Schedule</a></li>
+                    <li><a href="#" class="hover:text-primary-red transition-colors">Pricing</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Contact</h5>
+                <ul class="space-y-4 text-sm">
+                    <li>111 E Old Settlers Blvd<br>Round Rock, TX 78664</li>
+                    <li><a href="tel:512-577-0122" class="hover:text-primary-red transition-colors">(512) 577-0122</a></li>
+                    <li><a href="mailto:info@huszkaweightlifting.com" class="hover:text-primary-red transition-colors">info@huszkaweightlifting.com</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-sm">
+            <p>&copy; 2024 Huszka Weightlifting. All rights reserved. Built on the legacy of Mihaly Huszka.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
