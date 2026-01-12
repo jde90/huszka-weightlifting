@@ -3,10 +3,9 @@ compatibility_date = "2026-01-12"
 
 [assets]
 directory = "."
-# Exclude video files and oversized images not used in the website
+# Exclude video files not used in the website
 exclude = [
   "Photos/*.MP4",
   "Photos/*.mp4",
-  "Photos/*.MOV",
-  "Photos/CoachAttila.JPG"
+  "Photos/*.MOV"
 ]
