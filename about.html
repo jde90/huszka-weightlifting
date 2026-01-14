@@ -67,9 +67,38 @@
             </nav>
 
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-white text-3xl">☰</button>
+            <button id="mobile-menu-button" class="md:hidden text-white text-3xl">☰</button>
         </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-legacy-black border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4">
+                <a href="index.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors py-2">Home</a>
+                <a href="services.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors py-2">Services</a>
+                <a href="about.html" class="font-oswald text-sm uppercase tracking-wider text-primary-red py-2">About</a>
+                <a href="location.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors py-2">Location</a>
+                <a href="index.html#contact" class="bg-primary-red hover:bg-red-700 text-white px-6 py-3 font-oswald text-sm uppercase tracking-wider transition-all text-center">Get Started</a>
+            </div>
+        </nav>
     </header>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
 
     <!-- Page Hero -->
     <section class="bg-concrete-gray py-20 px-6">
