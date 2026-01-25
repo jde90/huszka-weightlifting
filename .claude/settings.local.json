@@ -5,7 +5,17 @@
       "Bash(timeout 2 cat:*)",
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Huszka Weightlifting website\n\n- Mobile-first responsive design with Tailwind CSS\n- 7 pages: Home, Services, About, Location, and 4 service detail pages\n- Typography: Oswald headings + Work Sans body\n- Color scheme: #D32F2F primary red, #111111 legacy black\n- Features: Interactive maps, coach bios, OCPE info, Safe Sport commitment\n- All local photos from Photos folder\n- Contact: \\(512\\) 577-0122, 111 E Old Settlers Blvd, Round Rock, TX 78664\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git config:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(powershell \"Get-ChildItem | Select-Object Name, @{Name=''Size\\(MB\\)'';Expression={[math]::Round\\($_Length/1MB, 2\\)}} | Sort-Object ''Size\\(MB\\)'' -Descending\")",
+      "Bash(dir)",
+      "Bash(findstr:*)",
+      "Bash(dir:*)",
+      "Bash(git rm:*)"
     ]
   }
 }
