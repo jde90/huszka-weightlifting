@@ -119,14 +119,9 @@
                 <div class="bg-concrete-gray p-8 border-l-4 border-primary-red">
                     <p class="text-gray-700 mb-6">Select a time that works for you. Your first session is free and gives you a chance to meet our coaches and experience our training environment.</p>
 
-                    <!-- Calendly Placeholder -->
-                    <div class="bg-gray-200 border-2 border-dashed border-gray-400 p-12 text-center">
-                        <p class="text-gray-500 font-oswald text-xl uppercase mb-2">Calendly Embed</p>
-                        <p class="text-gray-400 text-sm">Scheduling widget will appear here</p>
-                        <!-- Replace this div with: -->
-                        <!-- <div class="calendly-inline-widget" data-url="YOUR_CALENDLY_URL" style="min-width:320px;height:630px;"></div> -->
-                        <!-- <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
-                    </div>
+                    <!-- Calendly inline widget -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/huszka" style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                 </div>
             </div>
 
@@ -138,15 +133,79 @@
                 </div>
 
                 <div class="bg-concrete-gray p-8 border-l-4 border-primary-red">
-                    <p class="text-gray-700 mb-6">Tell us about yourself, your training history, and your goals. This helps our coaches prepare for your first session.</p>
+                    <p class="text-gray-700 mb-8">Tell us about yourself, your training history, and your goals. This helps our coaches prepare for your first session.</p>
 
-                    <!-- Intake Form Placeholder -->
-                    <div class="bg-gray-200 border-2 border-dashed border-gray-400 p-12 text-center">
-                        <p class="text-gray-500 font-oswald text-xl uppercase mb-2">New Athlete Intake Form</p>
-                        <p class="text-gray-400 text-sm mb-6">Form embed or link will appear here</p>
-                        <a href="#" class="inline-block bg-legacy-black hover:bg-gray-800 text-white font-oswald uppercase px-8 py-4 transition-all">
-                            Complete Intake Form
-                        </a>
+                    <!-- Intake Form -->
+                    <form id="intake-form" class="space-y-6">
+                        <input type="hidden" name="access_key" value="dd262edc-1b3c-475c-9547-6e9caacedf31">
+                        <input type="hidden" name="subject" value="New Athlete Intake Form">
+                        <input type="hidden" name="from_name" value="Huszka Weightlifting Website">
+
+                        <!-- Name -->
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest text-gray-600 mb-2">First & Last Name *</label>
+                            <input type="text" name="name" required class="w-full bg-white border-2 border-gray-200 p-4 focus:border-primary-red focus:outline-none">
+                        </div>
+
+                        <!-- Parent Name -->
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest text-gray-600 mb-2">Parent First & Last Name <span class="font-normal normal-case">(if under 18 years old)</span></label>
+                            <input type="text" name="parent_name" class="w-full bg-white border-2 border-gray-200 p-4 focus:border-primary-red focus:outline-none">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest text-gray-600 mb-2">Email *</label>
+                            <input type="email" name="email" required class="w-full bg-white border-2 border-gray-200 p-4 focus:border-primary-red focus:outline-none">
+                            <div class="mt-3 flex items-center gap-3">
+                                <input type="checkbox" name="marketing_consent" id="marketing_consent" value="Yes" class="w-5 h-5 accent-primary-red">
+                                <label for="marketing_consent" class="text-gray-600 text-sm">I agree to receive promotional emails and updates</label>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest text-gray-600 mb-2">Phone *</label>
+                            <input type="tel" name="phone" required class="w-full bg-white border-2 border-gray-200 p-4 focus:border-primary-red focus:outline-none">
+                        </div>
+
+                        <!-- Gender -->
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest text-gray-600 mb-2">Gender *</label>
+                            <div class="flex gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="gender" value="Male" required class="w-5 h-5 accent-primary-red">
+                                    <span class="text-gray-700">Male</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="gender" value="Female" required class="w-5 h-5 accent-primary-red">
+                                    <span class="text-gray-700">Female</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Training History -->
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest text-gray-600 mb-2">Summary of Training History *</label>
+                            <textarea name="training_history" rows="4" required class="w-full bg-white border-2 border-gray-200 p-4 focus:border-primary-red focus:outline-none" placeholder="Tell us about your experience with weightlifting, sports, or fitness..."></textarea>
+                        </div>
+
+                        <!-- Past Injuries -->
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest text-gray-600 mb-2">Any Past Injuries?</label>
+                            <textarea name="past_injuries" rows="3" class="w-full bg-white border-2 border-gray-200 p-4 focus:border-primary-red focus:outline-none" placeholder="List any injuries we should know about..."></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="w-full bg-legacy-black hover:bg-gray-800 text-white font-oswald uppercase px-8 py-5 text-lg transition-all">
+                            Submit Intake Form
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="intake-success" class="hidden bg-green-100 border-2 border-green-500 p-8 text-center">
+                        <p class="text-green-800 font-oswald text-2xl uppercase mb-2">Form Submitted!</p>
+                        <p class="text-green-700">Thank you for completing your intake form. We look forward to meeting you!</p>
                     </div>
                 </div>
             </div>
@@ -245,6 +304,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- Form Submission Script -->
+    <script>
+        document.getElementById('intake-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+
+            // Handle unchecked checkbox
+            if (!formData.has('marketing_consent')) {
+                formData.append('marketing_consent', 'No');
+            }
+
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    form.classList.add('hidden');
+                    document.getElementById('intake-success').classList.remove('hidden');
+                } else {
+                    alert('Something went wrong. Please try again or call us directly.');
+                }
+            } catch (error) {
+                alert('Something went wrong. Please try again or call us directly.');
+            }
+        });
+    </script>
 
 </body>
 </html>
