@@ -43,7 +43,7 @@
     <!-- Utility Top Bar -->
     <div class="bg-legacy-black text-white text-center py-2 text-sm md:text-base">
         <span class="md:hidden">📍 Round Rock, TX | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">Call Us</a></span>
-        <span class="hidden md:inline">📍 111 E Old Settlers Blvd, Round Rock, TX 78664 | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">(512) 577-0122</a></span>
+        <span class="hidden md:inline">📍 <a href="https://maps.app.goo.gl/LasZcu8XRiSpJUyT9" target="_blank" rel="noopener noreferrer" class="hover:text-primary-red">111 E Old Settlers Blvd, Round Rock, TX 78664</a> | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">(512) 577-0122</a></span>
     </div>
 
     <!-- Sticky Header -->
@@ -140,7 +140,7 @@
                 </div>
 
                 <!-- Form Fields (Vertical Stack on Mobile) -->
-                <form action="https://api.web3forms.com/submit" method="POST" class="flex-1 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <form id="contact-form" class="flex-1 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <input type="hidden" name="access_key" value="dd262edc-1b3c-475c-9547-6e9caacedf31">
                     <input type="hidden" name="subject" value="New Lead - Free Introduction Session">
                     <input type="hidden" name="from_name" value="Huszka Weightlifting Website">
@@ -172,6 +172,12 @@
                         </button>
                     </div>
                 </form>
+
+                <!-- Success Message -->
+                <div id="contact-success" class="hidden flex-1 w-full bg-green-100 border-2 border-green-500 p-8 text-center">
+                    <p class="text-green-800 font-oswald text-2xl uppercase mb-2">Thank You!</p>
+                    <p class="text-green-700">We've received your request and will contact you shortly.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -191,11 +197,11 @@
                     <h3 class="font-oswald text-xl uppercase mb-6">The Legacy of Mihaly Huszka (1933–2022)</h3>
 
                     <div class="space-y-6 text-gray-700 font-work-sans text-base md:text-lg leading-relaxed">
-                        <p>Huszka Weightlifting is not just a gym; it is the continuation of a lifetime dedicated to iron. Our foundation was built by Mihaly Huszka, a two-time Olympian and world-renowned Hungarian Weightlifter.</p>
+                        <p>Born in Hungary in 1933, Mihaly Huszka rose to become a two-time Olympian, two-time World & European silver medalist, and five-time Hungarian National Champion. In 1965, at the peak of his career, he defected from communist Hungary—risking everything for freedom.</p>
 
-                        <p>Mihaly didn't just lift; he taught. He brought the secrets of the Hungarian system—focusing on impeccable technique, explosive power, and longevity—to Texas. Today, we honor his memory by training with the same discipline, precision, and heart that took him to the world stage.</p>
+                        <p>After arriving in America in 1967, Huszka dedicated his life to coaching and competing well into his 80s. He claimed 22 World Masters Championships, set over 100 world records, and was named the "Grand Master Weightlifter of the Century."</p>
 
-                        <p>When you train here, you aren't just moving weight. You are stepping into a lineage of excellence.</p>
+                        <p>Today, we carry forward his Hungarian training methods—technical precision, explosive power, and the belief that strength is for life.</p>
                     </div>
 
                     <!-- Trust Bullets -->
@@ -483,10 +489,39 @@
         </div>
 
         <!-- Footer Bottom -->
-        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-sm">
-            <p>&copy; 2026 Huszka Weightlifting. All rights reserved. Built on the legacy of Mihaly Huszka.</p>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>&copy; 2026 Huszka Weightlifting. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="terms.html" class="hover:text-primary-red transition-colors">Terms of Service</a>
+                <a href="privacy.html" class="hover:text-primary-red transition-colors">Privacy Policy</a>
+            </div>
         </div>
     </footer>
+
+    <!-- Form Submission Script -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    form.classList.add('hidden');
+                    document.getElementById('contact-success').classList.remove('hidden');
+                } else {
+                    alert('Something went wrong. Please try again or call us directly.');
+                }
+            } catch (error) {
+                alert('Something went wrong. Please try again or call us directly.');
+            }
+        });
+    </script>
 
 </body>
 </html>
