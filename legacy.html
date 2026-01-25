@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Huszka Legacy | Mihaly Huszka - Grand Master Weightlifter of the Century</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Oswald and Work Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#D32F2F',
+                        'legacy-black': '#111111',
+                        'concrete-gray': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        'oswald': ['Oswald', 'sans-serif'],
+                        'work-sans': ['Work Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-legacy-black">
+
+    <!-- Utility Top Bar -->
+    <div class="bg-legacy-black text-white text-center py-2 text-sm md:text-base">
+        <span class="md:hidden">📍 Round Rock, TX | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">Call Us</a></span>
+        <span class="hidden md:inline">📍 111 E Old Settlers Blvd, Round Rock, TX 78664 | 📞 <a href="tel:512-577-0122" class="hover:text-primary-red">(512) 577-0122</a></span>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-legacy-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <img src="Photos/Logo.png" alt="Huszka Weightlifting" class="w-10 h-10 object-contain">
+                <h1 class="font-oswald text-xl md:text-2xl uppercase tracking-tight">Huszka Weightlifting</h1>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="services.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Services</a>
+                <a href="about.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">About</a>
+                <a href="legacy.html" class="font-oswald text-sm uppercase tracking-wider text-primary-red">Legacy</a>
+                <a href="location.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Location</a>
+                <a href="index.html#contact" class="bg-primary-red hover:bg-red-700 text-white px-6 py-3 font-oswald text-sm uppercase tracking-wider transition-all">Get Started</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white text-3xl">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-legacy-black border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4">
+                <a href="services.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors py-2">Services</a>
+                <a href="about.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors py-2">About</a>
+                <a href="legacy.html" class="font-oswald text-sm uppercase tracking-wider text-primary-red py-2">Legacy</a>
+                <a href="location.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors py-2">Location</a>
+                <a href="index.html#contact" class="bg-primary-red hover:bg-red-700 text-white px-6 py-3 font-oswald text-sm uppercase tracking-wider transition-all text-center">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="relative bg-legacy-black text-white py-24 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="Photos/Mihaly Huszka 2.jpg" alt="Mihaly Huszka" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6">
+            <div class="max-w-4xl">
+                <p class="text-primary-red font-oswald text-sm tracking-[0.3em] uppercase mb-4">1933 - 2022</p>
+                <h1 class="font-oswald text-5xl md:text-7xl lg:text-8xl uppercase leading-none mb-6">
+                    Mihaly<br>"Mike" Huszka
+                </h1>
+                <p class="text-2xl md:text-3xl text-gray-300 font-work-sans mb-8">
+                    Grand Master Weightlifter of the Century
+                </p>
+                <div class="flex flex-wrap gap-4 text-sm">
+                    <span class="bg-white/10 px-4 py-2 uppercase tracking-wider">2x Olympian</span>
+                    <span class="bg-white/10 px-4 py-2 uppercase tracking-wider">22x World Masters Champion</span>
+                    <span class="bg-white/10 px-4 py-2 uppercase tracking-wider">100+ World Records</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Quote -->
+    <section class="py-16 bg-primary-red text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <blockquote class="font-oswald text-2xl md:text-4xl uppercase leading-tight">
+                "From communist Hungary to Olympic competitor, to defector, to legendary coach, to the Grand Master Weightlifter of the Century."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Early Life -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-primary-red font-oswald text-sm tracking-[0.3em] uppercase mb-4">The Beginning</p>
+                    <h2 class="font-oswald text-4xl md:text-5xl uppercase leading-tight mb-8">
+                        Forged In<br>Post-War Hungary
+                    </h2>
+                    <div class="space-y-6 text-gray-700 font-work-sans text-lg leading-relaxed">
+                        <p>
+                            Born on June 2, 1933, in Csongrád, Hungary, Mihaly Huszka entered a world that would soon be torn apart by war and communist rule.
+                        </p>
+                        <p>
+                            Growing up in post-war Hungary under Soviet occupation, young Mihaly discovered weightlifting around 1950 at age 17. A friend introduced him to the sport, and what started as casual training quickly became an obsession.
+                        </p>
+                        <p>
+                            Training first with MTK Budapest, then Tatabányai, and finally Oroszlányi Bányász, Mihaly honed his craft. Between 1957 and 1965, he appeared on the Hungarian national team <strong>24 times</strong>, representing his country with pride despite the oppressive regime.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 border-2 border-primary-red"></div>
+                    <img src="Photos/Mihaly Huszka.jpg" alt="Young Mihaly Huszka" class="relative z-10 w-full grayscale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Career -->
+    <section class="py-20 px-6 bg-concrete-gray">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-primary-red font-oswald text-sm tracking-[0.3em] uppercase mb-4">Competitive Glory</p>
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase">Silver Medals &<br>Olympic Dreams</h2>
+                <div class="w-24 h-1 bg-primary-red mx-auto mt-6"></div>
+            </div>
+
+            <p class="text-center text-gray-700 text-lg max-w-3xl mx-auto mb-16">
+                The 1960s were Hungarian weightlifting's golden era, and Mihaly Huszka was a prominent member of a powerful team. Standing just 169 cm (5'7") and competing between 67.5kg and 75kg, Huszka built a remarkable competitive resume.
+            </p>
+
+            <!-- Timeline -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 border-l-4 border-primary-red">
+                    <span class="text-primary-red font-oswald text-3xl">1959</span>
+                    <p class="font-bold mt-2">World Debut</p>
+                    <p class="text-gray-600 text-sm mt-1">10th place, World Championships (lightweight) - his debut on the world stage</p>
+                </div>
+                <div class="bg-white p-6 border-l-4 border-primary-red">
+                    <span class="text-primary-red font-oswald text-3xl">1960</span>
+                    <p class="font-bold mt-2">Rome Olympics</p>
+                    <p class="text-gray-600 text-sm mt-1">6th place - totaling 365kg (110kg press + 107.5kg snatch + 147.5kg C&J)</p>
+                </div>
+                <div class="bg-white p-6 border-l-4 border-primary-red">
+                    <span class="text-primary-red font-oswald text-3xl">1961</span>
+                    <p class="font-bold mt-2">National Record</p>
+                    <p class="text-gray-600 text-sm mt-1">Set Hungarian national record with 390kg total at Prize of Moscow Tournament</p>
+                </div>
+                <div class="bg-white p-6 border-l-4 border-yellow-500">
+                    <span class="text-yellow-500 font-oswald text-3xl">1962</span>
+                    <p class="font-bold mt-2">World Silver</p>
+                    <p class="text-gray-600 text-sm mt-1">Silver medal, World & European Championships - 415kg total</p>
+                </div>
+                <div class="bg-white p-6 border-l-4 border-yellow-500">
+                    <span class="text-yellow-500 font-oswald text-3xl">1963</span>
+                    <p class="font-bold mt-2">World Silver</p>
+                    <p class="text-gray-600 text-sm mt-1">Silver medal, World & European Championships - 437.5kg total</p>
+                </div>
+                <div class="bg-white p-6 border-l-4 border-primary-red">
+                    <span class="text-primary-red font-oswald text-3xl">1964</span>
+                    <p class="font-bold mt-2">Tokyo Olympics</p>
+                    <p class="text-gray-600 text-sm mt-1">6th place (middleweight) - 420kg total</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-legacy-black text-white p-8 text-center">
+                <p class="font-oswald text-2xl uppercase mb-4">5 Hungarian National Championship Titles</p>
+                <p class="text-gray-400">Two at lightweight (1959-1960) and three at middleweight (1961, 1962, 1964)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Defection -->
+    <section class="py-20 px-6 bg-legacy-black text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <p class="text-primary-red font-oswald text-sm tracking-[0.3em] uppercase mb-4">1965</p>
+                    <h2 class="font-oswald text-4xl md:text-5xl uppercase leading-tight mb-8">
+                        Choosing Freedom<br>Over Silver
+                    </h2>
+                    <div class="space-y-6 text-gray-300 font-work-sans text-lg leading-relaxed">
+                        <p>
+                            In 1965, at age 32 and at the peak of his powers, Mihaly Huszka made the most courageous decision of his life: <strong class="text-white">he defected from communist Hungary</strong>.
+                        </p>
+                        <p>
+                            This wasn't just about athletics—it was about freedom. Huszka left behind his homeland, his language, his family connections, and the security of being a celebrated national team athlete.
+                        </p>
+                        <p>
+                            He spent two years in Austria before finally arriving in the United States in 1967. He arrived in America with little more than his knowledge of weightlifting and an unbreakable will.
+                        </p>
+                    </div>
+                    <div class="mt-8 border-l-4 border-primary-red pl-6">
+                        <p class="text-xl italic text-gray-400">
+                            "He risked everything for freedom and built a new life in America through sheer determination."
+                        </p>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-primary-red/20 rounded-full flex items-center justify-center">
+                            <div class="text-center">
+                                <p class="font-oswald text-6xl md:text-8xl text-primary-red">55</p>
+                                <p class="text-gray-400 uppercase tracking-wider text-sm">Years in America</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaching Career -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-primary-red font-oswald text-sm tracking-[0.3em] uppercase mb-4">Building Champions</p>
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase">The Coaching Legacy</h2>
+                <div class="w-24 h-1 bg-primary-red mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <p class="text-gray-700 font-work-sans text-lg leading-relaxed mb-6">
+                        Settling in Chicago, Huszka became head coach of the legendary <strong>Duncan YMCA weightlifting team</strong> in the late 1960s.
+                    </p>
+                    <p class="text-gray-700 font-work-sans text-lg leading-relaxed mb-6">
+                        His coaching philosophy emphasized <strong>undulating programming</strong> (varying intensity and volume systematically) and <strong>speed in the lifts</strong>—revolutionary concepts that influenced an entire generation of American lifters.
+                    </p>
+                    <p class="text-gray-700 font-work-sans text-lg leading-relaxed mb-8">
+                        One of his most accomplished students, <strong>Fred Lowe</strong> (three-time Olympian in 1968, 1972, and 1976), credited Huszka with teaching him "the value of undulating programming and speed."
+                    </p>
+
+                    <div class="bg-concrete-gray p-6 border-l-4 border-primary-red">
+                        <p class="font-bold mb-2">Training Under Huszka</p>
+                        <p class="text-gray-600">Under Huszka's guidance at Duncan Y, athletes trained six days per week with an average intensity of 72%—a carefully calibrated approach that built world-class strength without burnout.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-legacy-black text-white p-6 text-center">
+                        <p class="font-oswald text-5xl text-primary-red">6</p>
+                        <p class="uppercase tracking-wider text-sm mt-2">Olympians</p>
+                    </div>
+                    <div class="bg-legacy-black text-white p-6 text-center">
+                        <p class="font-oswald text-5xl text-primary-red">15</p>
+                        <p class="uppercase tracking-wider text-sm mt-2">International Competitors</p>
+                    </div>
+                    <div class="bg-legacy-black text-white p-6 text-center">
+                        <p class="font-oswald text-5xl text-primary-red">34</p>
+                        <p class="uppercase tracking-wider text-sm mt-2">National Champions</p>
+                    </div>
+                    <div class="bg-legacy-black text-white p-6 text-center">
+                        <p class="font-oswald text-5xl text-primary-red">20</p>
+                        <p class="uppercase tracking-wider text-sm mt-2">National Record Holders</p>
+                    </div>
+                    <div class="bg-primary-red text-white p-6 text-center col-span-2">
+                        <p class="font-oswald text-5xl">1</p>
+                        <p class="uppercase tracking-wider text-sm mt-2">World Record Holder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masters Legend -->
+    <section class="py-20 px-6 bg-concrete-gray">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 border-2 border-primary-red"></div>
+                    <img src="Photos/Mihaly Huszka 2.jpg" alt="Mihaly Huszka Masters Competition" class="relative z-10 w-full">
+                </div>
+                <div>
+                    <p class="text-primary-red font-oswald text-sm tracking-[0.3em] uppercase mb-4">The Masters Legend</p>
+                    <h2 class="font-oswald text-4xl md:text-5xl uppercase leading-tight mb-8">
+                        100+ World Records
+                    </h2>
+                    <div class="space-y-6 text-gray-700 font-work-sans text-lg leading-relaxed">
+                        <p>
+                            Mihaly Huszka's most astonishing achievement came after his competitive prime. In 1976, he began competing in Masters weightlifting, and what followed was nothing short of extraordinary.
+                        </p>
+                        <p>
+                            Over the next four decades, Huszka dominated Masters weightlifting like no one before or since:
+                        </p>
+                    </div>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-center gap-4">
+                            <span class="w-12 h-12 bg-primary-red text-white font-oswald text-xl flex items-center justify-center">25</span>
+                            <span class="text-lg">U.S. National Masters Champion titles</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="w-12 h-12 bg-primary-red text-white font-oswald text-xl flex items-center justify-center">22</span>
+                            <span class="text-lg">World Masters Champion titles</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="w-12 h-12 bg-primary-red text-white font-oswald text-xl flex items-center justify-center">4</span>
+                            <span class="text-lg">Masters World Games victories</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="w-12 h-12 bg-legacy-black text-white font-oswald text-lg flex items-center justify-center">100+</span>
+                            <span class="text-lg">World Masters records set</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 bg-legacy-black text-white p-6">
+                        <p class="text-lg">
+                            At age <strong class="text-primary-red text-2xl">82</strong> in 2015, Huszka was still competing and setting records in Dallas, Texas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Philosophy -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-primary-red font-oswald text-sm tracking-[0.3em] uppercase mb-4">The Method</p>
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase">Training Philosophy</h2>
+                <div class="w-24 h-1 bg-primary-red mx-auto mt-6"></div>
+            </div>
+
+            <p class="text-center text-gray-700 text-lg max-w-3xl mx-auto mb-16">
+                Huszka's training methods combined Hungarian and Soviet influences with his own innovations. His principles remain cutting-edge today.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center p-8 border-2 border-gray-200 hover:border-primary-red transition-colors">
+                    <div class="w-16 h-16 bg-primary-red text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">6</span>
+                    </div>
+                    <h3 class="font-oswald text-xl uppercase mb-4">High Frequency</h3>
+                    <p class="text-gray-600">6 days per week training for serious competitors</p>
+                </div>
+
+                <div class="text-center p-8 border-2 border-gray-200 hover:border-primary-red transition-colors">
+                    <div class="w-16 h-16 bg-primary-red text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-xl">72%</span>
+                    </div>
+                    <h3 class="font-oswald text-xl uppercase mb-4">Moderate Intensity</h3>
+                    <p class="text-gray-600">Around 72% of max, allowing high volume without excessive CNS fatigue</p>
+                </div>
+
+                <div class="text-center p-8 border-2 border-gray-200 hover:border-primary-red transition-colors">
+                    <div class="w-16 h-16 bg-primary-red text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">~</span>
+                    </div>
+                    <h3 class="font-oswald text-xl uppercase mb-4">Undulating Periodization</h3>
+                    <p class="text-gray-600">Varying intensity and volume systematically rather than linear progression</p>
+                </div>
+
+                <div class="text-center p-8 border-2 border-gray-200 hover:border-primary-red transition-colors">
+                    <div class="w-16 h-16 bg-primary-red text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">!</span>
+                    </div>
+                    <h3 class="font-oswald text-xl uppercase mb-4">Emphasis on Speed</h3>
+                    <p class="text-gray-600">Fast bar speed even with submaximal weights to develop explosive power</p>
+                </div>
+
+                <div class="text-center p-8 border-2 border-gray-200 hover:border-primary-red transition-colors md:col-span-2 lg:col-span-2">
+                    <div class="w-16 h-16 bg-legacy-black text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl">*</span>
+                    </div>
+                    <h3 class="font-oswald text-xl uppercase mb-4">Technical Precision</h3>
+                    <p class="text-gray-600">Perfect technique over maximal loading, especially for long-term development</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-concrete-gray p-8 border-l-4 border-primary-red">
+                <p class="text-xl text-gray-700 italic">
+                    "Huszka believed that proper technique and speed were more important than grinding heavy weights. He taught that bar speed developed power that transferred to maximum attempts."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hall of Fame -->
+    <section class="py-20 px-6 bg-legacy-black text-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-primary-red font-oswald text-sm tracking-[0.3em] uppercase mb-4">Recognition</p>
+            <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-12">Hall of Fame Inductee</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white/5 p-6 border border-white/10">
+                    <p class="font-oswald text-lg uppercase">IWF</p>
+                    <p class="text-gray-400 text-sm mt-2">Hall of Fame</p>
+                </div>
+                <div class="bg-white/5 p-6 border border-white/10">
+                    <p class="font-oswald text-lg uppercase">National Masters</p>
+                    <p class="text-gray-400 text-sm mt-2">Hall of Fame</p>
+                </div>
+                <div class="bg-white/5 p-6 border border-white/10">
+                    <p class="font-oswald text-lg uppercase">U.S. Olympic Weightlifting</p>
+                    <p class="text-gray-400 text-sm mt-2">Hall of Fame</p>
+                </div>
+                <div class="bg-white/5 p-6 border border-white/10">
+                    <p class="font-oswald text-lg uppercase">Strength & Power</p>
+                    <p class="text-gray-400 text-sm mt-2">Hall of Fame</p>
+                </div>
+            </div>
+
+            <div class="mt-12 inline-block bg-primary-red px-8 py-4">
+                <p class="font-oswald text-2xl uppercase">Grand Master Weightlifter of the Century</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Lesson -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-primary-red font-oswald text-sm tracking-[0.3em] uppercase mb-4">The Lesson</p>
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase">What Mihaly Taught Us</h2>
+                <div class="w-24 h-1 bg-primary-red mx-auto mt-6"></div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="flex items-start gap-6 p-6 bg-concrete-gray">
+                    <span class="text-primary-red font-oswald text-3xl">01</span>
+                    <p class="text-lg text-gray-700"><strong>Freedom is worth any sacrifice</strong></p>
+                </div>
+                <div class="flex items-start gap-6 p-6 bg-concrete-gray">
+                    <span class="text-primary-red font-oswald text-3xl">02</span>
+                    <p class="text-lg text-gray-700"><strong>Age is just a number</strong> when you train smart</p>
+                </div>
+                <div class="flex items-start gap-6 p-6 bg-concrete-gray">
+                    <span class="text-primary-red font-oswald text-3xl">03</span>
+                    <p class="text-lg text-gray-700"><strong>Great coaches build great athletes</strong> by teaching principles, not just programs</p>
+                </div>
+                <div class="flex items-start gap-6 p-6 bg-concrete-gray">
+                    <span class="text-primary-red font-oswald text-3xl">04</span>
+                    <p class="text-lg text-gray-700"><strong>You can reinvent yourself</strong> at any age</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-xl text-gray-700 leading-relaxed">
+                    At 82 years old, Huszka was still on the platform, still setting records, still proving that <strong class="text-primary-red">the iron respects only effort and consistency</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memorial -->
+    <section class="py-16 px-6 bg-concrete-gray">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-600 text-lg">
+                Mihaly "Mike" Huszka passed away on <strong>December 9, 2022</strong>, at age 89 in Houston, Texas.<br>
+                He had lived in the United States for 55 years—longer than he lived in Hungary.
+            </p>
+            <p class="mt-6 font-oswald text-2xl uppercase text-legacy-black">
+                His legacy lives on.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-primary-red">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-oswald text-4xl md:text-5xl uppercase text-white mb-6">
+                Train Using Huszka's Principles
+            </h2>
+            <p class="text-white/90 text-lg md:text-xl mb-10 font-work-sans">
+                Experience the same training philosophy that produced Olympians and world champions. Claim your free introduction session today.
+            </p>
+            <a href="index.html#contact" class="inline-block bg-white hover:bg-gray-100 text-primary-red font-oswald uppercase px-10 py-4 text-lg transition-all">
+                Claim Free Introduction Session
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-legacy-black text-gray-400 py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+
+            <!-- Brand Column -->
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 text-white mb-6">
+                    <img src="Photos/Logo.png" alt="Huszka Weightlifting" class="w-10 h-10 object-contain">
+                    <h2 class="font-oswald text-xl uppercase tracking-tight">Huszka Weightlifting</h2>
+                </div>
+                <p class="text-sm leading-relaxed mb-8">
+                    The premier destination for Olympic Weightlifting in Central Texas. Dedicated to the craft of strength since 1968.
+                </p>
+            </div>
+
+            <!-- Navigation Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Navigation</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="index.html" class="hover:text-primary-red transition-colors">Home</a></li>
+                    <li><a href="services.html" class="hover:text-primary-red transition-colors">Coaching Services</a></li>
+                    <li><a href="about.html" class="hover:text-primary-red transition-colors">About</a></li>
+                    <li><a href="legacy.html" class="hover:text-primary-red transition-colors">The Legacy</a></li>
+                    <li><a href="location.html" class="hover:text-primary-red transition-colors">Location</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Services</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="services/youth-weightlifting/" class="hover:text-primary-red transition-colors">Youth Weightlifting</a></li>
+                    <li><a href="services/youth-strength-conditioning/" class="hover:text-primary-red transition-colors">Youth Strength & Conditioning</a></li>
+                    <li><a href="services/masters-weightlifting/" class="hover:text-primary-red transition-colors">Masters Weightlifting</a></li>
+                    <li><a href="services/olympic-weightlifting-coaching/" class="hover:text-primary-red transition-colors">Olympic Weightlifting Coaching</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div>
+                <h5 class="text-white font-oswald uppercase mb-6 tracking-widest text-sm">Contact</h5>
+                <ul class="space-y-4 text-sm">
+                    <li>111 E Old Settlers Blvd<br>Round Rock, TX 78664</li>
+                    <li><a href="tel:512-577-0122" class="hover:text-primary-red transition-colors">(512) 577-0122</a></li>
+                    <li><a href="mailto:info@huszkaweightlifting.com" class="hover:text-primary-red transition-colors">info@huszkaweightlifting.com</a></li>
+                    <li class="mt-6">
+                        <p class="text-white font-bold mb-2">Hours</p>
+                        <p>Mon-Thu: 5pm - 8pm<br>Sat: By Appointment Only<br>Sun: Closed</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-sm">
+            <p>&copy; 2026 Huszka Weightlifting. All rights reserved. Built on the legacy of Mihaly Huszka.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
