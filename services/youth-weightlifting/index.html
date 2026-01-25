@@ -386,13 +386,16 @@
             </p>
 
             <!-- CTA Form (Inline on Desktop, Stacked on Mobile) -->
-            <form class="bg-white/10 backdrop-blur p-8 mb-6">
+            <form action="https://api.web3forms.com/submit" method="POST" class="bg-white/10 backdrop-blur p-8 mb-6">
+                <input type="hidden" name="access_key" value="dd262edc-1b3c-475c-9547-6e9caacedf31">
+                <input type="hidden" name="subject" value="Free Intro Session - Youth Weightlifting">
+                <input type="hidden" name="from_name" value="Huszka Weightlifting Website">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                    <input type="text" placeholder="Parent Name" class="w-full bg-white/90 border-none p-4 min-h-[48px] font-work-sans text-legacy-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white">
-                    <input type="tel" placeholder="Phone Number" class="w-full bg-white/90 border-none p-4 min-h-[48px] font-work-sans text-legacy-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white">
-                    <input type="text" placeholder="Athlete Age" class="w-full bg-white/90 border-none p-4 min-h-[48px] font-work-sans text-legacy-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white">
+                    <input type="text" name="parent_name" placeholder="Parent Name" required class="w-full bg-white/90 border-none p-4 min-h-[48px] font-work-sans text-legacy-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white">
+                    <input type="tel" name="phone" placeholder="Phone Number" required class="w-full bg-white/90 border-none p-4 min-h-[48px] font-work-sans text-legacy-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white">
+                    <input type="text" name="athlete_age" placeholder="Athlete Age" required class="w-full bg-white/90 border-none p-4 min-h-[48px] font-work-sans text-legacy-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white">
                 </div>
-                <button class="w-full bg-white hover:bg-gray-100 text-primary-red px-12 py-5 font-oswald text-lg uppercase transition-all">
+                <button type="submit" class="w-full bg-white hover:bg-gray-100 text-primary-red px-12 py-5 font-oswald text-lg uppercase transition-all">
                     Schedule Free Intro Session
                 </button>
             </form>
