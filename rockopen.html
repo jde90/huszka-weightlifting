@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ROCKTOBER – The Rock Open, a USA Weightlifting sanctioned event hosted by Huszka Weightlifting Club in Round Rock, Texas on October 17, 2026.">
+    <title>ROCKTOBER – The Rock Open | Huszka Weightlifting</title>
+    <link rel="icon" type="image/png" href="Photos/Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#D32F2F',
+                        'legacy-black': '#111111',
+                        'concrete-gray': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        'oswald': ['Oswald', 'sans-serif'],
+                        'work-sans': ['Work Sans', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Work Sans', sans-serif; overflow-x: hidden; }
+        .font-oswald { font-family: 'Oswald', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-legacy-black">
+    <div class="bg-legacy-black text-white text-center py-2 text-sm md:text-base">
+        <span class="md:hidden">Round Rock, TX | <a href="tel:512-577-0122" class="hover:text-primary-red">Call Us</a></span>
+        <span class="hidden md:inline"><a href="https://maps.app.goo.gl/LasZcu8XRiSpJUyT9" target="_blank" rel="noopener noreferrer" class="hover:text-primary-red">111 E Old Settlers Blvd, Round Rock, TX 78664</a> | <a href="tel:512-577-0122" class="hover:text-primary-red">(512) 577-0122</a></span>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-legacy-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <img src="Photos/Logo.png" alt="Huszka Weightlifting" class="h-12 object-contain">
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="services.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Services</a>
+                <a href="about.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">About</a>
+                <a href="legacy.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Legacy</a>
+                <a href="location.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors">Location</a>
+                <a href="get-started.html" class="bg-primary-red hover:bg-red-700 text-white px-6 py-3 font-oswald text-sm uppercase tracking-wider transition-all">Get Started</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white text-3xl" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden bg-legacy-black border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4">
+                <a href="services.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors py-2">Services</a>
+                <a href="about.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors py-2">About</a>
+                <a href="legacy.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors py-2">Legacy</a>
+                <a href="location.html" class="font-oswald text-sm uppercase tracking-wider hover:text-primary-red transition-colors py-2">Location</a>
+                <a href="get-started.html" class="bg-primary-red hover:bg-red-700 text-white px-6 py-3 font-oswald text-sm uppercase tracking-wider transition-all text-center">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative min-h-[540px] flex items-end overflow-hidden bg-legacy-black">
+            <img src="Photos/1067423.jpg" alt="Olympic weightlifter competing on the platform" class="absolute inset-0 w-full h-full object-cover object-center grayscale opacity-55">
+            <div class="absolute inset-0 bg-gradient-to-t from-legacy-black via-legacy-black/55 to-transparent"></div>
+            <div class="relative max-w-7xl mx-auto w-full px-6 py-16 md:py-20 text-white">
+                <p class="font-oswald uppercase tracking-[0.2em] md:tracking-[0.32em] text-primary-red text-xs md:text-base mb-4">Huszka Weightlifting Club Presents</p>
+                <h1 class="font-oswald text-4xl sm:text-5xl md:text-7xl lg:text-8xl uppercase leading-[0.95] max-w-5xl">ROCKTOBER<br><span class="text-primary-red">The Rock Open</span></h1>
+                <p class="mt-6 text-lg md:text-2xl font-semibold flex flex-wrap gap-x-3 gap-y-1"><span>Saturday, October 17, 2026</span><span class="text-primary-red hidden sm:inline">•</span><span>9:00 AM–6:00 PM</span></p>
+            </div>
+        </section>
+
+        <section class="bg-concrete-gray border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 py-7 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex gap-4 items-start"><span class="text-primary-red text-2xl" aria-hidden="true">&#128197;</span><div><p class="font-oswald uppercase tracking-wider text-sm">Date &amp; Time</p><p class="text-gray-700">October 17, 2026<br>9:00 AM–6:00 PM</p></div></div>
+                <div class="flex gap-4 items-start"><span class="text-primary-red text-2xl" aria-hidden="true">&#128205;</span><div><p class="font-oswald uppercase tracking-wider text-sm">Location</p><p class="text-gray-700">Huszka Weightlifting Club<br>Round Rock, Texas</p></div></div>
+                <div class="flex gap-4 items-start"><span class="text-primary-red text-2xl" aria-hidden="true">&#127947;</span><div><p class="font-oswald uppercase tracking-wider text-sm">Competition</p><p class="text-gray-700">USA Weightlifting<br>Sanctioned Event</p></div></div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 px-6">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_360px] gap-12 lg:gap-16 items-start">
+                <div>
+                    <div class="mb-14">
+                        <p class="font-oswald uppercase text-primary-red tracking-[0.25em] text-sm mb-3">The 2026 Edition</p>
+                        <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-6">Meet Us On The Platform</h2>
+                        <div class="w-24 h-1 bg-primary-red mb-8"></div>
+                        <div class="space-y-5 text-gray-700 text-lg leading-relaxed">
+                            <p>Get ready for the 2026 edition of ROCKTOBER – The Rock Open, presented by Huszka Weightlifting Club.</p>
+                            <p>All ages, bodyweight categories, and experience levels are welcome. Whether this is your first meet or your next step toward a bigger total, come compete with Central Texas's weightlifting community.</p>
+                            <p>This is a USA Weightlifting sanctioned event. All competitors must hold a current USA Weightlifting membership in good standing. Singlets are required for both weigh-ins and competition.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-legacy-black text-white p-8 md:p-10 border-l-8 border-primary-red mb-14">
+                        <p class="font-oswald uppercase tracking-[0.22em] text-primary-red text-sm mb-3">Important Update</p>
+                        <h2 class="font-oswald text-3xl uppercase mb-4">2026 IWF Bodyweight Categories</h2>
+                        <p class="text-gray-300 leading-relaxed mb-6">This event will use the updated 2026 IWF bodyweight categories.</p>
+                        <a href="https://www.usaweightlifting.org/news/2025/november/04/iwf-adjusts-bodyweight-categories-sets-categories-for-la2028" target="_blank" rel="noopener noreferrer" class="font-oswald uppercase tracking-wider text-white border-b-2 border-primary-red hover:text-primary-red transition-colors">Read the USA Weightlifting update</a>
+                    </div>
+
+                    <div class="mb-14">
+                        <h2 class="font-oswald text-4xl uppercase mb-8">Awards</h2>
+                        <div class="grid sm:grid-cols-3 gap-5">
+                            <div class="bg-concrete-gray p-6 border-t-4 border-primary-red"><p class="font-oswald text-2xl uppercase mb-2">Youth</p><p class="text-gray-700">Top 3 overall male and female athletes, age 17 and under.</p></div>
+                            <div class="bg-concrete-gray p-6 border-t-4 border-primary-red"><p class="font-oswald text-2xl uppercase mb-2">Open</p><p class="text-gray-700">Top 3 overall male and female athletes.</p></div>
+                            <div class="bg-concrete-gray p-6 border-t-4 border-primary-red"><p class="font-oswald text-2xl uppercase mb-2">Masters</p><p class="text-gray-700">Top 3 overall male and female athletes, age 35+.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-14">
+                        <h2 class="font-oswald text-4xl uppercase mb-6">Schedule &amp; Start List</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">A preliminary start list and session schedule will be released the week of October 12 and finalized by October 14.</p>
+                    </div>
+
+                    <div class="bg-concrete-gray p-8 md:p-10">
+                        <h2 class="font-oswald text-4xl uppercase mb-5">Volunteers Needed</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-5">Want to learn how Olympic weightlifting competitions operate? Volunteers may assist as loaders, marshals, timekeepers, announcers, and more.</p>
+                        <p class="text-gray-700 leading-relaxed">Current WSO Referee certification or higher is required to serve as a referee.</p>
+                    </div>
+                </div>
+
+                <aside class="lg:sticky lg:top-28 bg-white border border-gray-200 shadow-xl p-7 md:p-8">
+                    <p class="font-oswald uppercase tracking-[0.22em] text-primary-red text-sm mb-2">Competitor Registration</p>
+                    <p class="font-oswald text-3xl uppercase mb-2">Registration Coming Soon</p>
+                    <p class="text-gray-500 text-sm mb-7">No refunds</p>
+                    <div class="space-y-4 text-sm text-gray-700 mb-7">
+                        <p><strong class="text-legacy-black">Registration deadline:</strong><br>Saturday, October 10, 2026, or earlier if capacity is reached.</p>
+                        <p><strong class="text-legacy-black">Eligibility:</strong><br>Current USA Weightlifting membership required.</p>
+                    </div>
+                    <a href="https://www.eventbrite.com/e/1994106953578?aff=oddtdtcreator" target="_blank" rel="noopener noreferrer" class="block w-full bg-primary-red hover:bg-red-700 text-white text-center font-oswald uppercase tracking-wider px-6 py-4 transition-colors">View Event Listing</a>
+                    <p class="text-xs text-gray-500 text-center mt-3">Registration link coming soon.</p>
+                    <hr class="my-7 border-gray-200">
+                    <p class="font-oswald uppercase tracking-wider mb-3">Questions?</p>
+                    <p class="text-gray-700">Contact Coach Attila</p>
+                    <a href="mailto:amhuszka@gmail.com" class="text-primary-red font-semibold hover:underline break-all">amhuszka@gmail.com</a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="bg-legacy-black text-white py-16 px-6">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-[1fr_auto] gap-8 items-center">
+                <div><p class="font-oswald uppercase tracking-[0.25em] text-primary-red text-sm mb-3">Competition Venue</p><h2 class="font-oswald text-4xl md:text-5xl uppercase mb-4">Huszka Weightlifting Club</h2><p class="text-gray-300 text-lg">Located behind Rock Chiropractic<br>111 East Old Settlers Boulevard, Round Rock, TX 78664</p></div>
+                <a href="https://maps.google.com?saddr=Current+Location&daddr=30.5334011,-97.6848744&mode=driving" target="_blank" rel="noopener noreferrer" class="inline-block border-2 border-white hover:bg-white hover:text-legacy-black font-oswald uppercase tracking-wider px-8 py-4 transition-colors text-center">Get Directions</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-legacy-black text-gray-400 px-6 pb-10">
+        <div class="max-w-7xl mx-auto pt-10 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+            <a href="index.html"><img src="Photos/Logo.png" alt="Huszka Weightlifting" class="h-14 object-contain"></a>
+            <p>&copy; 2026 Huszka Weightlifting. All rights reserved.</p>
+            <div class="flex gap-6"><a href="terms.html" class="hover:text-primary-red transition-colors">Terms</a><a href="privacy.html" class="hover:text-primary-red transition-colors">Privacy</a></div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', String(!mobileMenu.classList.contains('hidden')));
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    </script>
+</body>
+</html>
